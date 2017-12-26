@@ -3,6 +3,12 @@
 //funzione che scambia gli elementi della stringa ottenendo quella opposta
 void u_reverse(char str[], int in, int fin);
 
+//calcola potenza exp di num
+int power(int num, int exp);
+
+//converte stringa nell'intero corrispondente
+int u_atoi(char str[], int length, int i);
+
 //funzione ausiliaria che conta il numero di cifre di num
 int u_cifre(int num);
 

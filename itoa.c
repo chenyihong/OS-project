@@ -25,6 +25,26 @@ int u_cifre(int num){
 
 }
 
+int power(int num, int exp){
+
+	if (exp != 0){
+		int potenza = power(num,exp-1) * num ;
+		return potenza ;
+	}
+	else 
+		return 1 ;
+}
+
+int u_atoi(char str[], int length, int i){
+
+	if (str[i] != 0){
+		int num_stringa = u_atoi(str,length-1,i+1) + ((int)str[i] - 48) * power(10,length - 1); //length-1 è l'esponente posizionale della cifra i-esima
+		return num_stringa ;
+	}
+	else 
+		return 0 ;
+
+}
 
 void u_itoa(char str[], int num, int i){ 
 	
